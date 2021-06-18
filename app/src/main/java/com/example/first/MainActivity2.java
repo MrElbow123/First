@@ -56,5 +56,9 @@ public class MainActivity2 extends Activity {
         scoreA=0;
         show();
     }
+    public  void addg2(View v){
+        scoreB+=2;
+        showb();
+    }
 
 }

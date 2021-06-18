@@ -13,7 +13,6 @@ public class RateManager {
     public RateManager(Context context) {
         dbHelper= new DBHelper(context);
         TBNAME=DBHelper.TB_NAME;
-
     }
     public void add(RateItem item){
         SQLiteDatabase db = dbHelper.getWritableDatabase(); //打开一个可写的数据库
