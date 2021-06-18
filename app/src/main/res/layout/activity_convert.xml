@@ -17,13 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="输入当前温度"
+        android:inputType="numberDecimal"
+
         />
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="转化成华氏度" />
+        android:text="转换汇率" />
 
 </LinearLayout>

@@ -16,18 +16,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);  //父类方法
-        setContentView(R.layout.today); //设置当前容器视图
+        super.onCreate(savedInstanceState);   //父类方法
+        setContentView(R.layout.today);       //设置当前容器视图
 
         TextView show = findViewById(R.id.show);
-                show.setText("温度转换！");
+        show.setText("温度转换！");            //TextView直接show
 
-        inp=findViewById(R.id.inp);
-        String str=inp.getText().toString();
+        inp=findViewById(R.id.input_rmb);
+        String str=inp.getText().toString();  //保存输入的东西
         Log.i(TAG,"onClick:"+str);
 
         Button btn=findViewById(R.id.btn);
-        btn.setOnClickListener(this);
+        btn.setOnClickListener(this);         //监听按钮 用onclick实现功能
     }
 
     @Override
@@ -37,5 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Double m=Double.parseDouble(str[0])*1.8+32;
         TextView show =findViewById(R.id.show);
         show.setText(m+"℉");
+
+        RateManager rateManager = new RateManager(this);
+        RateItem item= new RateItem("thj","11111");
+        rateManager.add(item);
     }
 }
