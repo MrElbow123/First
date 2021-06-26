@@ -2,9 +2,7 @@ package com.example.first;
 
 import androidx.annotation.NonNull;
 
-import android.app.AlertDialog;
 import android.app.ListActivity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
